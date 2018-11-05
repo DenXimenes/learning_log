@@ -139,6 +139,13 @@ if os.getcwd() == '/app':
     DATABASES = {
         'default': dj_database_url.config(default='post gres://localhost')
         }
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_DIRS = (
+
+os.path.join(BASE_DIR, 'static'),
+
+)
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure().
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
