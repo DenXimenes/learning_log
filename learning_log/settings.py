@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '1#pc1r6mxay*%xpbz*)rc=z)6@(8s_y542+r!(e@%k0k)=(77t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['tiechong123.herokuapp.com]
 
 
 # Application definition
@@ -150,8 +150,8 @@ os.path.join(BASE_DIR, 'static'),
 # Honor the 'X-Forwarded-Proto' header for request.is_secure().
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-# Allow all host headers.
-ALLOWED_HOSTS = ['*']
+
+
 
 # Static asset configuration
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
